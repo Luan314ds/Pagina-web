@@ -1,0 +1,278 @@
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0px;
+
+}
+
+body {
+  background-image: url(../img/pexels-salvio-bhering-11668-58729.jpg);
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+/* Comienzo del header */
+header {
+  background-color: #000000;
+  padding: 10px;
+}
+
+/* Cuando entremos en una version mobile se colocan los elementos abajo / */
+header nav {
+  width: 100%;
+}
+
+header ul {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  display: none;
+  flex-direction: column;
+}
+
+header ul.navegacion.show {
+  display: flex;
+}
+
+ul.navegacion li {
+  list-style: none;
+  margin: 0px 0px;
+  padding: 15px 20px;
+  text-transform: uppercase;
+}
+
+ul.navegacion li a {
+  text-decoration: none;
+  color: white;
+}
+
+ul.navegacion li a:hover {
+  color: gray;
+}
+
+.boton {
+  height: 50px;
+}
+
+.logo {
+  display: none;
+}
+
+@media screen and (min-width: 660px) {
+
+  header {
+    display: flex;
+
+  }
+
+  /* se oculta el boton en desktop / */
+  .boton {
+    display: none;
+  }
+
+  /* cambiamos la direccion del flex en desktop / */
+  ul.navegacion {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .logo {
+    display: block;
+    height: 50px;
+  }
+
+
+
+}
+
+/* Fin del header / */
+/* Comienzo del main */
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.imagen-central {
+  width: 90%;
+  border-radius: 50px;
+  margin-top: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+@media screen and (min-width: 660px) {
+  .imagen-central {
+    border-radius: 100px;
+  }
+}
+
+
+.destacados {
+  text-align: center;
+  margin-top: 20px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  text-shadow: 2px 2px 0 black;
+}
+
+.tarjeta {
+  border: 2px solid black;
+  width: 150px;
+  border-radius: 10px;
+  margin: 10px;
+  overflow: hidden;
+}
+
+
+.tarjeta:nth-of-type(1) {
+  transition-duration: 1s;
+}
+
+.tarjeta:nth-of-type(2) {
+  transition-duration: 1s;
+}
+
+.tarjeta:nth-of-type(3) {
+  transition-duration: 1s;
+}
+
+.tarjeta:nth-of-type(4) {
+  transition-duration: 1s;
+}
+
+.tarjeta:nth-of-type(5) {
+  transition-duration: 1s;
+}
+
+.tarjeta:nth-of-type(6) {
+  transition-duration: 1s;
+}
+
+.tarjeta:nth-of-type(7) {
+  transition-duration: 1s;
+}
+
+.tarjeta:nth-of-type(8) {
+  transition-duration: 1s;
+}
+
+.tarjeta:hover {
+  transform: scale(1.2);
+}
+
+.tarjeta-cuerpo {
+  border-top: 2px solid black;
+  padding: 1rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.tarjeta-cuerpo a {
+  background-color: rgba(0, 0, 0, 0.705);
+  color: white;
+  padding: 8px 10px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.remera-oversize {
+  width: 150px;
+}
+
+@media (min-width: 660px) {
+  .carousel {
+    flex-direction: row;
+  }
+
+  .tarjeta {
+    width: 250px;
+  }
+
+  .remera-oversize {
+    width: 300px;
+  }
+}
+
+
+/* Fin del main */
+/* Comienzo del footer */
+footer {
+  background-color: black;
+  color: white;
+}
+
+ul.navegacion-footer li a {
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+
+
+}
+
+.h1-footer {
+  color: white;
+  padding-left: 10px;
+  text-transform: uppercase;
+}
+
+
+
+
+
+.social-icons-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.social-icon {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  border: 1px solid white;
+  background-image: url(../img/instagram-logo.png);
+  background-position: center;
+  background-size: 40%;
+  background-repeat: no-repeat;
+  margin: 1rem;
+
+  &:nth-of-type(2) {
+    background-image: url(../img/logo-facebook.png.webp);
+  }
+
+  &:nth-of-type(3) {
+    background-image: url(../img/TikTok-logo-black-circle-png.webp);
+  }
+
+  &:nth-of-type(4) {
+    background-image: url(../img/580b57fcd9996e24bc43c53e.webp);
+  }
+
+}
+
+@media (min-width: 1000px) {
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+  }
+}
