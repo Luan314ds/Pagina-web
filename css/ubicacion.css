@@ -1,8 +1,15 @@
 * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0px;
+    box-sizing:border-box ;
 
 }
+body {
+    background-image: url(../img/pexels-salvio-bhering-11668-58729.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+  }
 
 /* Comienzo del header */
 header {
@@ -10,10 +17,7 @@ header {
     padding: 10px;
 }
 
-/* Cuando entremos en una version mobile se colocan los elementos abajo / */
-header nav {
-    width: 100%;
-}
+
 
 header ul {
     width: 100%;
@@ -43,7 +47,7 @@ ul.navegacion li a:hover {
     color: gray;
 }
 
-.boton {
+.icono-menu {
     height: 50px;
 }
 
@@ -51,7 +55,7 @@ ul.navegacion li a:hover {
     display: none;
 }
 
-@media screen and (min-width: 660px) {
+@media screen and (min-width: 1000px) {
 
     header {
         display: flex;
@@ -59,7 +63,7 @@ ul.navegacion li a:hover {
     }
 
     /* se oculta el boton en desktop / */
-    .boton {
+    .icono-menu {
         display: none;
     }
 
@@ -82,11 +86,83 @@ ul.navegacion li a:hover {
 /* Comienzo del main */
 .h1-ubicacion{
     text-align: center;
+    text-transform: uppercase;
+    color: aliceblue;
+    letter-spacing: 0px;
     font-size: 3rem;
 }
 
 .maps{ 
-    width: 100vw;
+    width: 90vw;
     height: 100vh;
     border-radius: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
+/* fin del main */
+
+/* Comienzo del footer */
+footer {
+    background-color: black;
+    color: white;
+  }
+  
+  ul.navegacion-footer li a {
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+  
+  
+  }
+  
+  .h1-footer {
+    color: white;
+    padding-left: 10px;
+    text-transform: uppercase;
+  }
+  
+  
+  
+  
+  
+  .social-icons-container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .social-icon {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 1px solid white;
+    background-image: url(../img/580b57fcd9996e24bc43c521.webp);
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    margin: 1rem;
+  
+    &:nth-of-type(2) {
+      background-image: url(../img/logo-facebook.png.webp);
+    }
+  
+    &:nth-of-type(3) {
+      background-image: url(../img/TikTok-logo-black-circle-png.webp);
+    }
+  
+    &:nth-of-type(4) {
+      background-image: url(../img/580b57fcd9996e24bc43c53e.webp);
+    }
+  }
+  
+  
+  @media (min-width: 1000px) {
+    footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 50px;
+    }
+  }
+  /* fin del footer */

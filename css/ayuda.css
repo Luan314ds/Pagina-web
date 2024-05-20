@@ -1,21 +1,22 @@
 * {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0px;
     box-sizing:border-box ;
 }
 
 body {
-    background-image: url(../img/skate-para-empezar.webp);
-    background-repeat: no-repeat;
+    background-image: url(../img/pexels-salvio-bhering-11668-58729.jpg);
     background-size: cover;
     height: 100vh;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* comienzo del header */
+/* Comienzo del header */
 header {
-    background-color: black;
+    background-color: #000000;
     padding: 10px;
 }
+
 
 header ul {
     width: 100%;
@@ -29,12 +30,14 @@ header ul.navegacion.show {
     display: flex;
 }
 
+
 ul.navegacion li {
     list-style: none;
     margin: 0px 0px;
     padding: 15px 20px;
     text-transform: uppercase;
 }
+
 
 ul.navegacion li a {
     text-decoration: none;
@@ -81,77 +84,69 @@ ul.navegacion li a:hover {
 }
 
 /* Fin del header / */
-/* Comienzo del main */
+
+/* comienzo del main */
+
+.h1-talles {
+    color: white;
+    letter-spacing: 5px;
+
+}
 
 main {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     min-height: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
-form {
+thead {
+    text-transform: uppercase;
+}
+
+table,
+td,
+tr {
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: 15px;
     background-color: white;
-    display: flex;
-    flex-direction: column;
-    width: 250px;
-    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.2);
-    padding: 10px;
-    border: 5px solid dodgerblue;
-    border-radius: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+table {
+    width: 70;
+    height: 40vh;
 
 }
 
 @media screen and (min-width: 1000px) {
-    form {
-        transform: scale(1.3);
+
+    table,
+    td,
+    tr {
+        font-size: 25px;
     }
-
 }
 
-input {
-    border-radius: 5px;
-}
 
-.boton-form {
-    font-size: 17px;
-    margin-top: 5px;
-    padding: 5px;
-    border: transparent;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-    background: dodgerblue;
-    color: white;
-    border-radius: 4px;
-}
-
-.boton-form:hover {
-    background: rgb(2, 0, 36);
-    background: linear-gradient(90deg, rgba(30, 144, 255, 1) 0%, rgba(0, 212, 255, 1) 100%);
-}
-
-.boton-form:active {
-    transform: translate(0em, 0.2em);
-}
-
-#captchatexto {
-    border: 2px solid dodgerblue;
-    border-radius: 10px;
-    text-align: center;
-
-}
 
 /* fin del main */
 /* Comienzo del footer */
 footer {
     background-color: black;
     color: white;
-
 }
 
 ul.navegacion-footer li a {
     text-transform: uppercase;
     color: white;
     text-decoration: none;
+
+
 }
 
 .h1-footer {
@@ -203,5 +198,4 @@ ul.navegacion-footer li a {
         padding: 50px;
     }
 }
-
 /* fin del footer */
